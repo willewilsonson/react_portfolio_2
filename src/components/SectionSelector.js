@@ -7,8 +7,10 @@ import Contact from './sections/Contact';
 import gsap from 'gsap/all';
 
 
-const Menu = ({ showSection, setShowSection }) => {
+const Menu = ({ showSection, setShowSection, setColor }) => {
     const portfolioSection = useRef();
+
+    const blue = '#e1e9eb';
 
     const handleClick = () => {
         gsap.to(portfolioSection.current, {
@@ -17,6 +19,7 @@ const Menu = ({ showSection, setShowSection }) => {
             zIndex: -1,
         })
         setTimeout(() => {
+            setColor(blue);
             setShowSection('menu');
         }, 200);
         return;
@@ -32,6 +35,7 @@ const Menu = ({ showSection, setShowSection }) => {
             return;
         }
         gsap.to(portfolioSection.current, {
+            delay: 0.5,
             duration: 1,
             opacity: 1,
             zIndex: 1,

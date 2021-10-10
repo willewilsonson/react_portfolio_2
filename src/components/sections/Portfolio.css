@@ -4,8 +4,10 @@
 }
 
 .portfolio__portfolio-wrapper {
-    height: 90%;
+    margin-top: 10%;
+    height: 90vh;
     width: 100%;
+    background: var(--pink);
 }
 
 .portfolio__back-button {

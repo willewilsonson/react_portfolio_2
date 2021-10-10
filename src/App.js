@@ -13,7 +13,7 @@ function App() {
 
   useEffect(() => {
     console.log(color);
-    gsap.to(appColor.current, {
+    gsap.to(document.body, {
       duration: 1,
       background: color,
     })
@@ -22,10 +22,10 @@ function App() {
   return (
     <section className="App" ref={appColor}>
       <Start isStarted={isStarted} setIsStarted={setIsStarted} setShowSection={setShowSection} setColor={setColor}/>
-      <Menu showSection={showSection} setIsStarted={setIsStarted} setShowSection={setShowSection}/> 
+      <Menu showSection={showSection} setIsStarted={setIsStarted} setShowSection={setShowSection} setColor={setColor}/> 
       {
-        isStarted && showSection === '' ? <Menu showSection={showSection} setShowSection={setShowSection}/> 
-        : isStarted && showSection !== '' ? <SectionSelector showSection={showSection} setShowSection={setShowSection}/> 
+        isStarted && showSection === '' ? <Menu showSection={showSection} setShowSection={setShowSection} setColor={setColor}/> 
+        : isStarted && showSection !== '' ? <SectionSelector showSection={showSection} setShowSection={setShowSection} setColor={setColor}/> 
         : false
       }
     </section>

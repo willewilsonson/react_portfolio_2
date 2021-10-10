@@ -2,7 +2,7 @@ import './Menu.css';
 import { useRef, useEffect } from 'react';
 import { gsap } from 'gsap';
 
-const Menu = ({ showSection, setShowSection, setIsStarted }) => {
+const Menu = ({ showSection, setShowSection, setColor }) => {
     const menuSection = useRef();
     const menuWrapper = useRef();
     const menuButtonOne = useRef();
@@ -13,6 +13,7 @@ const Menu = ({ showSection, setShowSection, setIsStarted }) => {
     const timeline = gsap.timeline();
 
     const white = '#f5f8eb';
+    const pink = '#efe6d6';
 
     const clickedButton = (section) => {
         if (section === 'start') {
@@ -23,6 +24,7 @@ const Menu = ({ showSection, setShowSection, setIsStarted }) => {
             setTimeout(() => {
                 window.location.reload();
             }, 300);
+            setColor(white);
             return;
         }
         console.log(section);
@@ -33,7 +35,7 @@ const Menu = ({ showSection, setShowSection, setIsStarted }) => {
     useEffect(() => {
         if (showSection === 'menu') {
             timeline.to(menuSection.current, {
-                delay: 1,
+                delay: 0.5,
                 duration: 0.5,
                 opacity: 1,
                 zIndex: 1,
@@ -81,10 +83,22 @@ const Menu = ({ showSection, setShowSection, setIsStarted }) => {
                 borderColor: white,
             }, '<');
         }
-        gsap.to(menuSection.current, {
-            opacity: 0,
-            zIndex: -1,
-        })
+        if (showSection === 'start') {
+            setColor(white);
+            gsap.to(menuSection.current, {
+                opacity: 0,
+                zIndex: -1,
+            })
+            return;
+        }
+        if (showSection === 'portfolio' || showSection === 'skills' || showSection === 'about' || showSection === 'contact') {
+            setColor(pink);
+            gsap.to(menuSection.current, {
+                opacity: 0,
+                zIndex: -1,
+            })
+            return;
+        }
     }, [showSection, timeline]);
 
 

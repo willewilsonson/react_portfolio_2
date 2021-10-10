@@ -26,6 +26,7 @@ const Start = ({ isStarted, setIsStarted, setShowSection, setColor }) => {
                 duration: 1.5,
                 opacity: 0.2,
                 x: '101%',
+                display: 'none',
                 ease: 'expo',
             });
             gsap.to(startSection.current, {
@@ -42,6 +43,7 @@ const Start = ({ isStarted, setIsStarted, setShowSection, setColor }) => {
                 duration: 1.5,
                 opacity: 1,
                 x: '0%',
+                display: 'content',
                 ease: 'expo',
             });
             gsap.to(startSection.current, {

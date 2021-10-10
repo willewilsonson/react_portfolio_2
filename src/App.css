@@ -7,14 +7,18 @@
 
 }
 
-.app {
-  position: absolute;
+html, body {
+  max-height: 100vh !important;
+  max-width: 100vh !important;
+  overflow: hidden !important;
 }
 
 body {
   background: var(--white);
   margin: 0;
   padding: 0;
-  height: 100%;
-  overflow: hidden;
+}
+
+.app {
+  position: absolute;
 }
