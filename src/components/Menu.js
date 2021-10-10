@@ -99,7 +99,7 @@ const Menu = ({ showSection, setShowSection, setColor }) => {
             })
             return;
         }
-    }, [showSection, timeline]);
+    }, [showSection, timeline, setColor]);
 
 
     return(
