@@ -49,11 +49,24 @@
     border-top: 0.1em solid var(--blue);
 }
 
-/* #button-portfolio:hover,
+#button-portfolio,
+#button-skills,
+#button-about,
+#button-contact,
+#button-start
+{
+    transition: 0.4s background-color;
+    transition: 0.2 font-size ;
+}
+
+#button-portfolio:hover,
 #button-skills:hover,
 #button-about:hover,
-#button-contact:hover {
-    color: var(--red);
-    background: var(--white);
-} */
+#button-contact:hover,
+#button-start:hover
+{
+    background-color: var(--white);
+    font-size: 1.1em;
+    transition-delay: 0.1s;
+}
 

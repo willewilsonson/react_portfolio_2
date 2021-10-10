@@ -24,7 +24,6 @@ const Menu = ({ showSection, setShowSection }) => {
             timeline.to(menuSection.current, {
                 delay: 1,
                 duration: 0.5,
-                zIndex: 2,
                 opacity: 1,
             });
             timeline.to(menuButtonOne.current, {
@@ -69,6 +68,9 @@ const Menu = ({ showSection, setShowSection }) => {
                 duration: 1,
                 borderColor: white,
             }, '<');
+            timeline.to(menuSection.current, {
+                zIndex: 2,
+            });
         }
         return;
     }, [showSection, timeline]);
