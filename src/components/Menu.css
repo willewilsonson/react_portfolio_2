@@ -1,0 +1,59 @@
+.menu {
+    position: absolute;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.menu__button-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    height: 90vh;
+}
+
+.menu__button-wrapper button {
+    border: none;
+    width: 50%;
+    height: 50%;
+    background: var(--blue);
+    color: transparent;
+}
+
+#button-start {
+    width: 100%;
+    height: 10vh;
+    border: none;
+    border-top: 0.2em solid var(--blue);
+    background: var(--blue);
+    color: transparent;
+}
+
+#button-portfolio {
+    border-right: 0.1em solid var(--blue);
+    border-bottom: 0.1em solid var(--blue);
+}
+
+#button-skills {
+    border-left: 0.1em solid var(--blue);
+    border-bottom: 0.1em solid var(--blue);
+}
+
+#button-about {
+    border-right: 0.1em solid var(--blue);
+    border-top: 0.1em solid var(--blue);
+}
+
+#button-contact {
+    border-left: 0.1em solid var(--blue);
+    border-top: 0.1em solid var(--blue);
+}
+
+/* #button-portfolio:hover,
+#button-skills:hover,
+#button-about:hover,
+#button-contact:hover {
+    color: var(--red);
+    background: var(--white);
+} */
+
