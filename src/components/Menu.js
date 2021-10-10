@@ -2,7 +2,7 @@ import './Menu.css';
 import { useRef, useEffect } from 'react';
 import { gsap } from 'gsap';
 
-const Menu = ({ showSection, setShowSection }) => {
+const Menu = ({ showSection, setShowSection, setIsStarted }) => {
     const menuSection = useRef();
     const menuWrapper = useRef();
     const menuButtonOne = useRef();
@@ -15,9 +15,20 @@ const Menu = ({ showSection, setShowSection }) => {
     const white = '#f5f8eb';
 
     const clickedButton = (section) => {
+        if (section === 'start') {
+            gsap.to(menuSection.current, {
+                duration: 0.3,
+                opacity: 0,
+            })
+            setTimeout(() => {
+                window.location.reload();
+            }, 300);
+            return;
+        }
         console.log(section);
         return setShowSection(section);
     };
+
 
     useEffect(() => {
         if (showSection === 'menu') {
@@ -25,6 +36,7 @@ const Menu = ({ showSection, setShowSection }) => {
                 delay: 1,
                 duration: 0.5,
                 opacity: 1,
+                zIndex: 1,
             });
             timeline.to(menuButtonOne.current, {
                 duration: 0.3,
@@ -68,11 +80,11 @@ const Menu = ({ showSection, setShowSection }) => {
                 duration: 1,
                 borderColor: white,
             }, '<');
-            timeline.to(menuSection.current, {
-                zIndex: 2,
-            });
         }
-        return;
+        gsap.to(menuSection.current, {
+            opacity: 0,
+            zIndex: -1,
+        })
     }, [showSection, timeline]);
 
 

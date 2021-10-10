@@ -28,6 +28,25 @@ const Start = ({ isStarted, setIsStarted, setShowSection, setColor }) => {
                 x: '101%',
                 ease: 'expo',
             });
+            gsap.to(startSection.current, {
+                zIndex: -1,
+            })
+        }
+        if (!isStarted) {
+            gsap.to(startButton.current, {
+                duration: 0.1,
+                opacity: 1,
+            });
+            gsap.to(welcomeText.current, {
+                delay: 0.2,
+                duration: 1.5,
+                opacity: 1,
+                x: '0%',
+                ease: 'expo',
+            });
+            gsap.to(startSection.current, {
+                zIndex: 1,
+            })
         }
         return;
     }, [isStarted]);

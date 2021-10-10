@@ -1,11 +1,12 @@
 import './Portfolio.css';
 
-const Portfolio = () => {
+const Portfolio = ({ handleClick }) => {
 
     return(
-        <div className='portfolio'>
-            Portfolio
-        </div>
+        <section className='portfolio'>
+            <article className='portfolio__portfolio-wrapper'>Portfolio</article>
+            <button onClick={ () => handleClick() }className='portfolio__back-button'>BACK</button>
+        </section>
     );
 };
 

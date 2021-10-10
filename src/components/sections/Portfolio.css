@@ -1,0 +1,16 @@
+.portfolio {
+    height: 100%;
+    width: 100%;
+}
+
+.portfolio__portfolio-wrapper {
+    height: 90%;
+    width: 100%;
+}
+
+.portfolio__back-button {
+    position: fixed;
+    top: 0;
+    height: 10%;
+    width: 100%;
+}

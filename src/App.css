@@ -7,6 +7,10 @@
 
 }
 
+.app {
+  position: absolute;
+}
+
 body {
   background: var(--white);
   margin: 0;

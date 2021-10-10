@@ -1,11 +1,12 @@
 import './Contact.css';
 
-const Contact = () => {
+const Contact = ({ handleClick }) => {
 
     return(
-        <div className='contact'>
-            Contact
-        </div>
+        <section className='contact'>
+            <article className='contact__contact-wrapper'>Contact</article>
+            <button onClick={ () => handleClick('menu') }className='contact__back-button'>BACK</button>
+        </section>
     );
 };
 

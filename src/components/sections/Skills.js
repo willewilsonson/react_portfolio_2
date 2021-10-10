@@ -1,11 +1,12 @@
 import './Skills.css';
 
-const Skills = () => {
+const Skills = ({ handleClick }) => {
 
     return(
-        <div className='skills'>
-            Skills
-        </div>
+        <section className='skills'>
+            <article className='skills__skills-wrapper'>Skills</article>
+            <button onClick={ () => handleClick('menu') }className='skills__back-button'>BACK</button>
+        </section>
     );
 };
 

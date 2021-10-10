@@ -1,7 +1,7 @@
 import './App.css';
 import Start from './components/Start';
 import Menu from './components/Menu';
-// import SectionSelector from './components/SectionSelector';
+import SectionSelector from './components/SectionSelector'
 import { useEffect, useState, useRef } from 'react';
 import gsap from 'gsap/all';
 
@@ -22,12 +22,12 @@ function App() {
   return (
     <section className="App" ref={appColor}>
       <Start isStarted={isStarted} setIsStarted={setIsStarted} setShowSection={setShowSection} setColor={setColor}/>
-      <Menu showSection={showSection} setShowSection={setShowSection}/> 
-      {/* {
+      <Menu showSection={showSection} setIsStarted={setIsStarted} setShowSection={setShowSection}/> 
+      {
         isStarted && showSection === '' ? <Menu showSection={showSection} setShowSection={setShowSection}/> 
         : isStarted && showSection !== '' ? <SectionSelector showSection={showSection} setShowSection={setShowSection}/> 
         : false
-      } */}
+      }
     </section>
   );
 }
