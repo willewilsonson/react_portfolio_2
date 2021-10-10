@@ -7,7 +7,6 @@ const Start = ({ isStarted, setIsStarted, setShowSection, setColor }) => {
     const startButton = useRef();
     const welcomeText = useRef();
     const blue = '#e1e9eb';
-    const white = '#f5f8eb';
 
     const handleClick = (boolean, section) => {
         setIsStarted(boolean);
@@ -50,13 +49,11 @@ const Start = ({ isStarted, setIsStarted, setShowSection, setColor }) => {
             gsap.to(startSection.current, {
                 zIndex: 1,
             })
+            gsap.to(startSection.current, {
+                duration: 4,
+                opacity: 1,
+            })
         }
-        gsap.to(startSection.current, {
-            duration: 1.5,
-            opacity: 1,
-            background: white,
-        })
-        return;
     }, [isStarted]);
 
     return(
