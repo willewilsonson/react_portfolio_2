@@ -14,6 +14,7 @@ const Menu = ({ showSection, setShowSection, setColor }) => {
 
     const white = '#f5f8eb';
     const pink = '#efe6d6';
+    const blue = '#e1e9eb';
 
     const clickedButton = (section) => {
         if (section === 'start') {
@@ -24,7 +25,6 @@ const Menu = ({ showSection, setShowSection, setColor }) => {
             setTimeout(() => {
                 window.location.reload();
             }, 300);
-            setColor(white);
             return;
         }
         console.log(section);
@@ -34,6 +34,7 @@ const Menu = ({ showSection, setShowSection, setColor }) => {
 
     useEffect(() => {
         if (showSection === 'menu') {
+            setColor(blue);
             timeline.to(menuSection.current, {
                 delay: 0.5,
                 duration: 0.5,
@@ -84,7 +85,6 @@ const Menu = ({ showSection, setShowSection, setColor }) => {
             }, '<');
         }
         if (showSection === 'start') {
-            setColor(white);
             gsap.to(menuSection.current, {
                 opacity: 0,
                 zIndex: -1,

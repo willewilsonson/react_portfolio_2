@@ -8,7 +8,7 @@ import gsap from 'gsap/all';
 function App() {
   const[isStarted, setIsStarted] = useState(false);
   const[showSection, setShowSection] = useState('');
-  const[color, setColor] = useState('');
+  const[color, setColor] = useState('#e1e9eb');
   const appColor = useRef();
 
   useEffect(() => {
