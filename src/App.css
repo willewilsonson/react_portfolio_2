@@ -15,7 +15,6 @@
 html, body {
   max-height: 100vh !important;
   max-width: 100vh !important;
-  /* overflow: hidden !important; */
 }
 
 body {

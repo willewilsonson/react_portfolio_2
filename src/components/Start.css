@@ -8,13 +8,98 @@
     overflow: hidden;
 }
 
-.start__welcome-text {
+/* .start__welcome-text {
     height: 100%;
     margin: 0;
+    position: relative;
+    left: 101%;
+} */
+
+.start__welcome-text-wrapper {
+    display: flex;
+    flex-direction: row;
+    margin: 20% auto;
+}
+
+.hello, .iam {
+    font-size: 2em;
+}
+
+.william {
+    opacity: 0;
+    position: relative;
+    font-size: 3em;
 }
 
 .start__home-button {
     display: none;
     height: 10vh;
     width: 100vh;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700);
+
+body {
+  background-color: #e0e0e0;
+  font-family: 'Source Sans Pro', sans-serif;
+  letter-spacing: -0.8px;
+}
+.wrapper{
+  border-left: 6px solid black;
+  overflow: hidden;
+}
+h1{
+  font-size: 12vw;
+  color: var(--brown);
+  margin: 2% 2%;
+  padding: 0;
+  line-height: 0.8;
+}
+p{
+  font-size: 4vw;
+  margin: 2% 2%;
+  font-weight: bold;
+}
+
+.introline {
+    width: 50%;
+    position: absolute;
+    top: 20%;
+    left: -101%;
+}
+
+.bigline {
+    width: 50%;
+    position: absolute;
+    top: 30%;
+    left: -101%;
+}
+
+.outroline {
+    width: 80%;
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    text-align: center;
+    opacity: 0;
+}
+
+.start-button {
+    border-radius: 5px;
+    opacity: 0;
+    font-family: var(--buttons-sans-serif);
+    font-weight: bolder;
+    position: absolute;
+    bottom: 25%;
+    left: 15%;
+    height: 10%;
+    width: 70%;
+    border: none;
+    background: var(--blue);
+    color: var(--green);
+    border: 5px solid var(--pink)
+}
+
+.start-button:hover {
+    background: var(--white);
 }

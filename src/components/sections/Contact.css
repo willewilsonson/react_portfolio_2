@@ -58,7 +58,7 @@
 .contact__back-button {
     font-family: var(--buttons-sans-serif);
     font-weight: bolder;
-    opacity: 0.9;
+    opacity: 0.6;
     position: fixed;
     top: 90%;
     left: 1%;
@@ -70,3 +70,6 @@
     border-top: 2px solid var(--pink)
 }
 
+.contact__back-button:hover {
+    opacity: 1;
+}
