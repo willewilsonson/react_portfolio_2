@@ -38,7 +38,7 @@ const Contact = ({ handleClick }) => {
                     <input type="submit" value="Send" id="submit" />
                 </form>
             </article>
-            <button onClick={ () => handleClick('menu') }className='contact__back-button'>BACK</button>
+            <button onClick={ () => handleClick('menu') }className='contact__back-button'>MENU</button>
         </section>
     );
 };

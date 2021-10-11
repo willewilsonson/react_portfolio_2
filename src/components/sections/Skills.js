@@ -70,7 +70,7 @@ const Skills = ({ handleClick }) => {
             <article className='skills__skills-wrapper'>
                 {tools.map((logo, i) => createLogoDiv(logo, i))}
             </article>
-            <button onClick={ () => handleClick('menu') } className='skills__back-button'>BACK</button>
+            <button onClick={ () => handleClick('menu') } className='skills__back-button'>MENU</button>
         </section>
     );
 };

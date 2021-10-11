@@ -103,3 +103,9 @@ p{
 .start-button:hover {
     background: var(--white);
 }
+
+@media screen and (min-width: 900px) {
+    .outroline {
+        top: 50%;  
+    } 
+}

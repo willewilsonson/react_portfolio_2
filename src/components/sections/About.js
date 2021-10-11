@@ -1,11 +1,26 @@
 import './About.css';
+import profileImage from './img/william_profile_image.png';
 
 const About = ({ handleClick }) => {
 
     return(
         <section className='about'>
-            <article className='about__about-wrapper'>About</article>
-            <button onClick={ () => handleClick('menu') }className='about__back-button'>BACK</button>
+            <h1 className='about__title'>ABOUT</h1>
+            <article className='about__about-wrapper'>
+                <div className='about-wrapper__left'>
+                    <p>Frontend</p>
+                </div>
+                <div className='about-wrapper__right'>
+                    <p>Backend</p>
+                </div>
+                <div className='about-wrapper__left'>
+                    <p>Personal</p>
+                </div>
+                <div className='about-wrapper__image-wrapper'>
+                    <img className='about-wrapper__image' src={profileImage} alt='William Nordenstad'></img>
+                </div>
+            </article>
+            <button onClick={ () => handleClick('menu') }className='about__back-button'>MENU</button>
         </section>
     );
 };
