@@ -78,9 +78,16 @@
     width: 100%;
 }
 
+.project-name {
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.4em;
+}
+
 .description__text {
     font-family: var(--buttons-sans-serif);
     margin: 5% 5%;
+    letter-spacing: 0.1em;
 }
 
 .portfolio__back-button {

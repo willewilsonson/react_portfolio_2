@@ -3,6 +3,7 @@
     height: 100%;
     width: 100vw;
     padding-bottom: 10%;
+    overflow: hidden;
 }
 
 .contact-wrapper__title {
@@ -59,6 +60,10 @@
     color: var(--green);
 }
 
+#submit:hover {
+    opacity: 0.5;
+}
+
 .contact__back-button {
     font-family: var(--buttons-sans-serif);
     font-weight: bolder;
@@ -84,6 +89,13 @@
 
     .contact__contact-wrapper {
         margin: 10% auto;
+    }
+
+    .contact__back-button {
+        margin: 0 auto;
+        padding: 0;
+        width: 30%;
+        top: 0;
     }
 }
 

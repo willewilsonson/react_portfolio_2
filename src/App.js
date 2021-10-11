@@ -1,7 +1,7 @@
 import './App.css';
 import Start from './components/Start';
 import Menu from './components/Menu';
-import SectionSelector from './components/SectionSelector'
+import SectionSelector from './components/SectionSelector';
 import { useEffect, useState, useRef } from 'react';
 import gsap from 'gsap/all';
 
@@ -10,7 +10,6 @@ function App() {
   const[showSection, setShowSection] = useState('');
   const[color, setColor] = useState('#f5f8eb');
   const appColor = useRef();
-
 
   useEffect(() => {
     gsap.to(document.body, {

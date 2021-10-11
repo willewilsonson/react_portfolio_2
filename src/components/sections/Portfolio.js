@@ -16,7 +16,7 @@ const Portfolio = ({ handleClick }) => {
                     </div>
                     <img className='portfolio-wrapper__image' src={strummrImage} alt='Strummr'></img>
                     <div className='project-wrapper__description'>
-                        <p className='description__text'>Strummr</p><p className='description__text'>is a MERN-stack project build with my team at Salt bootcamp.</p>
+                        <p className='description__text project-name'>Strummr</p><p className='description__text'>A MERN-stack social media for musicians project build with my team at Salt bootcamp. Deployed with Heroku.<br/><br/>Click the links above to see the code at Github or try out the Demo (It can be slow to start due to Herokus servers). </p>
                     </div>
                 </div>
                 <div className='portfolio-wrapper__project-wrapper'>
@@ -26,7 +26,7 @@ const Portfolio = ({ handleClick }) => {
                     </div>
                     <img className='portfolio-wrapper__image' src={todoImage} alt='Todo'></img>
                     <div className='project-wrapper__description'>
-                        <p className='description__text'>Strummr</p><p className='description__text'>is a MERN-stack project build with my team at Salt bootcamp.</p>
+                        <p className='description__text project-name'>React Todo</p><p className='description__text'>Todo list build with React and localstorage. Deployed with Github pages.<br/><br/>Click the links above to see the code at Github or try out the Demo.</p>
                     </div>
                 </div>
                 <div className='portfolio-wrapper__project-wrapper'>
@@ -34,9 +34,19 @@ const Portfolio = ({ handleClick }) => {
                         <a className='links-wrapper__link' href="https://github.com/willewilsonson/hackday" target="_blank" rel="noreferrer"><span className='links-wrapper__arrow'>{'>>'}</span>CODE</a>
                         <p className='links-wrapper__link--no-demo' ><span className='links-wrapper__arrow'>{'>>'}</span>DEMO</p>
                     </div>
-                    <img className='portfolio-wrapper__image' src={hackdayImage} alt='Todo'></img>
+                    <img className='portfolio-wrapper__image' src={hackdayImage} alt='Fotibol'></img>
                     <div className='project-wrapper__description'>
-                        <p className='description__text'>Strummr</p><p className='description__text'>is a MERN-stack project build with my team at Salt bootcamp.</p>
+                        <p className='description__text project-name'>Fotibol</p><p className='description__text'>A football search engine built with React frontend and express backend. Sending calls to external API football-data.org.<br/><br/>Click then link above to see the code at Github</p>
+                    </div>
+                </div>
+                <div className='portfolio-wrapper__project-wrapper'>
+                    <div className='project-wrapper__links-wrapper'>
+                        <a className='links-wrapper__link' href="https://github.com/willewilsonson/hackday" target="_blank" rel="noreferrer"><span className='links-wrapper__arrow'>{'>>'}</span>CODE</a>
+                        <p className='links-wrapper__link--no-demo' ><span className='links-wrapper__arrow'>{'>>'}</span>DEMO</p>
+                    </div>
+                    <img className='portfolio-wrapper__image' src={hackdayImage} alt='Portfolio'></img>
+                    <div className='project-wrapper__description'>
+                        <p className='description__text project-name'>Portfolio</p><p className='description__text'>My portfolio site built with React and EmailJS to send mail via the contact form.<br/><br/>Click then link above to see the code at Github</p>
                     </div>
                 </div>
             </article>
