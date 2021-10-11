@@ -2,6 +2,7 @@ import './Portfolio.css';
 import strummrImage from './img/strummr_image.png';
 import todoImage from './img/project_todo_image.png';
 import hackdayImage from './img/hackday.png';
+import portfolioImage from './img/portfolio_image.png';
 
 const Portfolio = ({ handleClick }) => {
 
@@ -41,10 +42,10 @@ const Portfolio = ({ handleClick }) => {
                 </div>
                 <div className='portfolio-wrapper__project-wrapper'>
                     <div className='project-wrapper__links-wrapper'>
-                        <a className='links-wrapper__link' href="https://github.com/willewilsonson/hackday" target="_blank" rel="noreferrer"><span className='links-wrapper__arrow'>{'>>'}</span>CODE</a>
+                        <a className='links-wrapper__link' href="https://github.com/willewilsonson/react_portfolio_2" target="_blank" rel="noreferrer"><span className='links-wrapper__arrow'>{'>>'}</span>CODE</a>
                         <p className='links-wrapper__link--no-demo' ><span className='links-wrapper__arrow'>{'>>'}</span>DEMO</p>
                     </div>
-                    <img className='portfolio-wrapper__image' src={hackdayImage} alt='Portfolio'></img>
+                    <img className='portfolio-wrapper__image' src={portfolioImage} alt='Portfolio'></img>
                     <div className='project-wrapper__description'>
                         <p className='description__text project-name'>Portfolio</p><p className='description__text'>My portfolio site built with React and EmailJS to send mail via the contact form.<br/><br/>Click then link above to see the code at Github</p>
                     </div>
