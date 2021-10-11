@@ -51,8 +51,8 @@ const Skills = ({ handleClick }) => {
 
     const createLogoDiv = (logo, key) => {
         return  <div className='skills-wrapper__project-wrapper' key={key}>
-                    <img className='project-wrapper__image' src={logo[0]} alt={logo[1]}></img>
-                    <p className='project-wrapper__text'>{logo[2]}</p>
+                    <img className='skills-wrapper__image' src={logo[0]} alt={logo[1]}></img>
+                    <p className='skills-wrapper__text'>{logo[2]}</p>
                 </div>
     };
 

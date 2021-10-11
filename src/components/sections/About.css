@@ -58,7 +58,6 @@
 .about__back-button {
     font-family: var(--buttons-sans-serif);
     font-weight: bolder;
-    opacity: 0.6;
     position: fixed;
     top: 90%;
     left: 1%;
@@ -71,12 +70,12 @@
 }
 
 .about__back-button:hover {
-    opacity: 1;
+    opacity: 0.5;
 }
 
 @media screen and (min-width: 600px) {
     .about {
-        margin: 0 auto;
+        margin: 5% auto;
         padding-bottom: 0;
     }
 

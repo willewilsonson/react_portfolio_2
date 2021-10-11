@@ -1,5 +1,5 @@
 .contact {
-    margin: 20% auto;
+    margin: 10% auto;
     height: 100%;
     width: 100vw;
     padding-bottom: 10%;
@@ -62,7 +62,6 @@
 .contact__back-button {
     font-family: var(--buttons-sans-serif);
     font-weight: bolder;
-    opacity: 0.6;
     position: fixed;
     top: 90%;
     left: 1%;
@@ -75,5 +74,27 @@
 }
 
 .contact__back-button:hover {
-    opacity: 1;
+    opacity: 0.5;
+}
+
+@media screen and (min-width: 600px) {
+    .contact {
+        padding: 0;
+    }
+
+    .contact__contact-wrapper {
+        margin: 10% auto;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .contact__contact-wrapper {
+        margin: 5% auto;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .contact__contact-wrapper {
+        margin: 0% auto;
+    }
 }
