@@ -4,6 +4,12 @@
     padding-bottom: 10%;
 }
 
+.portfolio__title {
+    font-family: var(--title);
+    text-align: center;
+    font-size: 2em;
+}
+
 .portfolio__portfolio-wrapper {
     width: 100vw;
     background: var(--pink);
@@ -36,6 +42,8 @@
 }
 
 .links-wrapper__link {
+    font-family: var(--buttons-sans-serif);
+    font-weight: bolder;
     text-decoration: none;
     color: var(--green);
     margin: 5% 10% 0% 10%;
@@ -68,10 +76,13 @@
 }
 
 .description__text {
+    font-family: var(--buttons-sans-serif);
     margin: 5% auto;
 }
 
 .portfolio__back-button {
+    font-family: var(--buttons-sans-serif);
+    font-weight: bolder;
     opacity: 0.9;
     position: fixed;
     top: 90%;

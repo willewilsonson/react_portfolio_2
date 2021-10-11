@@ -13,7 +13,6 @@ function App() {
 
 
   useEffect(() => {
-    console.log(color);
     gsap.to(document.body, {
       duration: 1,
       background: color,

@@ -27,7 +27,6 @@ const Menu = ({ showSection, setShowSection, setColor }) => {
             }, 300);
             return;
         }
-        console.log(section);
         return setShowSection(section);
     };
 

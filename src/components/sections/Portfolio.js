@@ -7,6 +7,7 @@ const Portfolio = ({ handleClick }) => {
 
     return(
         <section className='portfolio'>
+            <h1 className='portfolio__title'>PORTFOLIO</h1>
             <article className='portfolio__portfolio-wrapper'>
                 <div className='portfolio-wrapper__project-wrapper'>
                     <div className='project-wrapper__links-wrapper'>

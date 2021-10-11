@@ -13,6 +13,7 @@
 }
 
 .menu__button-wrapper button {
+    font-family: var(--buttons-cursive);
     border: none;
     width: 50%;
     height: 50%;
@@ -21,6 +22,8 @@
 }
 
 #button-start {
+    font-family: var(--buttons-sans-serif);
+    font-weight: bolder;
     width: 100%;
     height: 10vh;
     border: none;

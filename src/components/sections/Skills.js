@@ -21,7 +21,7 @@ import githubLogo from './img/github_logo.png';
 import gitLogo from './img/git_logo.png';
 
 const frontEnd = [
-    [reactLogo, 'React logo', 'Node JS'],
+    [reactLogo, 'React logo', 'React JS'],
     [html5Logo, 'Html5 logo', 'HTML5'],
     [cssLogo, 'Css logo', 'CSS'],
     [reduxLogo, 'Redux logo', 'Redux'],

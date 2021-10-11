@@ -5,8 +5,9 @@
 }
 
 .skills__title {
+    font-family: var(--title);
     text-align: center;
-    margin: 10% auto;
+    font-size: 2em;
 }
 
 .skills__skills-wrapper {
@@ -31,10 +32,14 @@
 }
 
 .project-wrapper__text {
+    font-family: var(--buttons-sans-serif);
+    font-weight: bolder;
     text-align: center;
 }
 
 .skills__back-button {
+    font-family: var(--buttons-sans-serif);
+    font-weight: bolder;
     opacity: 0.9;
     position: fixed;
     top: 90%;

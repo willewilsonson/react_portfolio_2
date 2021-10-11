@@ -1,10 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@300&family=Staatliches&display=swap');
+
 :root {
   --green: #666235;
   --brown: #a98c6a;
   --pink: #efe6d6;
   --white: #f5f8eb;
   --blue: #e1e9eb;
-
+  --title: 'Staatliches', cursive;
+  --buttons-cursive: 'Staatliches', cursive;
+  --buttons-sans-serif: 'Gemunu Libre', sans-serif; 
 }
 
 html, body {
