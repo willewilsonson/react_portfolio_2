@@ -15,20 +15,35 @@
 .about-wrapper__left {
     margin: 10% 0% 0% 2%;
     width: 80%;
-    height: 40vh;
     background: var(--blue);
 }
 
 .about-wrapper__right {
     margin: 10% 0% 0% 18%;
     width: 80%;
-    height: 40vh;
     background: var(--blue);
 }
 
 .about-wrapper__left, .about-wrapper__right {
     text-align: center;
     border-radius: 5%;
+    padding: 1em;
+}
+
+.about-wrapper__left p,
+.about-wrapper__right p{
+    font-family: var(--buttons-sans-serif);
+    font-weight: bolder;
+    text-decoration: none;
+    color: var(--green);
+    margin: 5% 10% 5% 10%;
+    transition: 0.5s transform;
+}
+
+.about__text-project {
+    font-family: var(--buttons-sans-serif);
+    margin: 5% 5%;
+    letter-spacing: 0.1em;
 }
 
 .about-wrapper__image-wrapper {

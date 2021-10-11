@@ -1,7 +1,7 @@
 import './Portfolio.css';
 import strummrImage from './img/strummr_image.png';
 import todoImage from './img/project_todo_image.png';
-import hackdayImage from './img/hackday.png';
+import hackdayImage from './img/futibol_image.png';
 import portfolioImage from './img/portfolio_image.png';
 
 const Portfolio = ({ handleClick }) => {
@@ -17,7 +17,7 @@ const Portfolio = ({ handleClick }) => {
                     </div>
                     <img className='portfolio-wrapper__image' src={strummrImage} alt='Strummr'></img>
                     <div className='project-wrapper__description'>
-                        <p className='description__text project-name'>Strummr</p><p className='description__text'>A MERN-stack social media for musicians project build with my team at Salt bootcamp. Deployed with Heroku.<br/><br/>Click the links above to see the code at Github or try out the Demo (It can be slow to start due to Herokus servers). </p>
+                        <p className='description__text-project project-name'>Strummr</p><p className='description__text-project'>A MERN-stack social media for musicians project build with my team at Salt bootcamp. Deployed with Heroku.<br/><br/>Click the links above to see the code at Github or try out the Demo (It can be slow to start due to Herokus servers). </p>
                     </div>
                 </div>
                 <div className='portfolio-wrapper__project-wrapper'>
@@ -27,7 +27,7 @@ const Portfolio = ({ handleClick }) => {
                     </div>
                     <img className='portfolio-wrapper__image' src={todoImage} alt='Todo'></img>
                     <div className='project-wrapper__description'>
-                        <p className='description__text project-name'>React Todo</p><p className='description__text'>Todo list build with React and localstorage. Deployed with Github pages.<br/><br/>Click the links above to see the code at Github or try out the Demo.</p>
+                        <p className='description__text-project project-name'>React Todo</p><p className='description__text-project'>Todo list build with React and localstorage. Deployed with Github pages.<br/><br/>Click the links above to see the code at Github or try out the Demo.</p>
                     </div>
                 </div>
                 <div className='portfolio-wrapper__project-wrapper'>
@@ -37,7 +37,7 @@ const Portfolio = ({ handleClick }) => {
                     </div>
                     <img className='portfolio-wrapper__image' src={hackdayImage} alt='Fotibol'></img>
                     <div className='project-wrapper__description'>
-                        <p className='description__text project-name'>Fotibol</p><p className='description__text'>A football search engine built with React frontend and express backend. Sending calls to external API football-data.org.<br/><br/>Click then link above to see the code at Github</p>
+                        <p className='description__text-project project-name'>Fotibol</p><p className='description__text-project'>A football search engine built with React frontend and express backend. Sending calls to external API football-data.org.<br/><br/>Click then link above to see the code at Github</p>
                     </div>
                 </div>
                 <div className='portfolio-wrapper__project-wrapper'>
@@ -47,7 +47,7 @@ const Portfolio = ({ handleClick }) => {
                     </div>
                     <img className='portfolio-wrapper__image' src={portfolioImage} alt='Portfolio'></img>
                     <div className='project-wrapper__description'>
-                        <p className='description__text project-name'>Portfolio</p><p className='description__text'>My portfolio site built with React and EmailJS to send mail via the contact form.<br/><br/>Click then link above to see the code at Github</p>
+                        <p className='description__text-project project-name'>Portfolio</p><p className='description__text-project'>My portfolio site built with React and EmailJS to send mail via the contact form.<br/><br/>Click then link above to see the code at Github</p>
                     </div>
                 </div>
             </article>

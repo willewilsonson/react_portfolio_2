@@ -84,7 +84,7 @@
     font-size: 1.4em;
 }
 
-.description__text {
+.description__text-project {
     font-family: var(--buttons-sans-serif);
     margin: 5% 5%;
     letter-spacing: 0.1em;
@@ -140,7 +140,7 @@
         font-size: 1em;
     }
 
-    .description__text {
+    .description__text-project {
         font-size: 2vw;
     }
 
@@ -168,5 +168,9 @@
         width: 46%;
         margin: 5% 0% 0% 2%;
         height: 100%;
+    }
+
+    .description__text-project {
+        font-size: 1vw;
     }
 }
