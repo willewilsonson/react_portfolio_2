@@ -7,7 +7,7 @@ const About = ({ handleClick }) => {
         <section className='about'>
             <h1 className='about__title'>ABOUT</h1>
             <article className='about__about-wrapper'>
-                <div className='about-wrapper__left'>
+                <div className='about-wrapper__left' id='frontend'>
                     <p>Frontend</p>
                 </div>
                 <div className='about-wrapper__right'>
@@ -16,8 +16,8 @@ const About = ({ handleClick }) => {
                 <div className='about-wrapper__left'>
                     <p>Personal</p>
                 </div>
-                <div className='about-wrapper__image-wrapper'>
-                    <img className='about-wrapper__image' src={profileImage} alt='William Nordenstad'></img>
+                <div className='about-wrap-image'>
+                <img className='about-wrapper__image' src={profileImage} alt='William Nordenstad'></img>
                 </div>
             </article>
             <button onClick={ () => handleClick('menu') }className='about__back-button'>MENU</button>

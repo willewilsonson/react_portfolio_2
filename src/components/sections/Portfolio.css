@@ -148,6 +148,7 @@
 
 @media screen and (min-width: 1200px) {
     .portfolio {
+        margin: 0 auto;
         overflow: hidden;
     }
 
