@@ -37,7 +37,7 @@ const Portfolio = ({ handleClick }) => {
                     </div>
                     <img className='portfolio-wrapper__image' src={hackdayImage} alt='Fotibol'></img>
                     <div className='project-wrapper__description'>
-                        <p className='description__text-project project-name'>Fotibol</p><p className='description__text-project'>A football search engine built with React frontend and express backend. Sending calls to external API football-data.org.<br/><br/>Click then link above to see the code at Github</p>
+                        <p className='description__text-project project-name'>Fotibol</p><p className='description__text-project'>A football search engine built with React frontend and express backend. Sending calls to external API football-data.org.<br/><br/>Click the link above to see the code at Github</p>
                     </div>
                 </div>
                 <div className='portfolio-wrapper__project-wrapper'>
@@ -47,7 +47,7 @@ const Portfolio = ({ handleClick }) => {
                     </div>
                     <img className='portfolio-wrapper__image' src={portfolioImage} alt='Portfolio'></img>
                     <div className='project-wrapper__description'>
-                        <p className='description__text-project project-name'>Portfolio</p><p className='description__text-project'>My portfolio site built with React and EmailJS to send mail via the contact form.<br/><br/>Click then link above to see the code at Github</p>
+                        <p className='description__text-project project-name'>Portfolio</p><p className='description__text-project'>My portfolio site built with React and EmailJS to send mail via the contact form.<br/><br/>Click the link above to see the code at Github</p>
                     </div>
                 </div>
             </article>
