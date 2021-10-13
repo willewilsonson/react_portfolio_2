@@ -84,11 +84,16 @@
 
 @media screen and (min-width: 600px) {
     .contact {
+        margin: 5% auto;
         padding: 0;
     }
 
+    .contact-wrapper__title {
+        font-size: 3em;
+    }
+
     .contact__contact-wrapper {
-        margin: 10% auto;
+        margin: 15% auto;
     }
 
     .contact__back-button {

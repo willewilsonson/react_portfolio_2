@@ -29,6 +29,40 @@
     color: var(--green);
 }
 
+#strummr,
+#strummr .links-wrapper__link {
+    background: #171738;
+    color: #fff;
+}
+
+#todo,
+#todo .links-wrapper__link {
+    background: #0000ff;
+    color: #ffffff;
+}
+
+#futibol,
+#futibol .links-wrapper__link {
+    background: #008000;
+    color: #f9f9ed;
+}
+
+#strummr .links-wrapper__link:hover .links-wrapper__arrow{
+    color: #fff;
+}
+
+#todo .links-wrapper__link:hover .links-wrapper__arrow{
+    color: #fff;
+}
+
+#futibol .links-wrapper__link:hover .links-wrapper__arrow{
+    color: #f9f9ed;
+}
+
+#portfolio .links-wrapper__link:hover .links-wrapper__arrow {
+    color: var(--green);
+}
+
 .portfolio-wrapper__image {
     margin: 5% 5% 0% 1%;
     height: 80%;
@@ -60,7 +94,7 @@
 .links-wrapper__link:hover {
     transform: translate(15%);
     transition-delay: 0.2s;
-    color: var(--green);
+    /* color: var(--green); */
 }
 
 .links-wrapper__link .links-wrapper__arrow {
@@ -69,7 +103,7 @@
 }
 
 .links-wrapper__link:hover .links-wrapper__arrow {
-    color: var(--green);
+    /* color: var(--green); */
     opacity: 0.8;
     transition-delay: 0.3s;
 }

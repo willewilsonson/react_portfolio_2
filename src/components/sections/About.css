@@ -94,6 +94,10 @@
         padding-bottom: 0;
     }
 
+    .about__title {
+        font-size: 3em;
+    }
+
     .about-wrapper__project-wrapper {
         margin: 5% auto;
     }
