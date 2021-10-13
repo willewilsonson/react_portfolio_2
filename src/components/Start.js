@@ -1,6 +1,6 @@
 import './Start.css';
 import { useEffect, useRef } from 'react';
-import { gsap } from 'gsap';
+import StartAnimations from '../animations/StartAnimations';
 
 const Start = ({ isStarted, setIsStarted, setShowSection, setColor }) => {
     const startSection = useRef();
@@ -9,7 +9,6 @@ const Start = ({ isStarted, setIsStarted, setShowSection, setColor }) => {
     const welcomeTextSecond = useRef();
     const welcomeTextName = useRef();
     const blue = '#e1e9eb';
-    const timeLine = gsap.timeline();
 
     const handleClick = (boolean, section) => {
         setIsStarted(boolean);
@@ -19,60 +18,8 @@ const Start = ({ isStarted, setIsStarted, setShowSection, setColor }) => {
     };
 
     useEffect(() => {
-        if (isStarted) {
-            gsap.to(startButton.current, {
-                duration: 0.1,
-                opacity: 0,
-            });
-            // gsap.to(welcomeText.current, {
-            //     delay: 0.2,
-            //     duration: 1.5,
-            //     opacity: 0.2,
-            //     x: '101%',
-            //     display: 'none',
-            //     ease: 'expo',
-            // });
-            gsap.to(startSection.current, {
-                zIndex: -1,
-                opacity: 0,
-            })
-        }
-        if (!isStarted) {
-            // gsap.to(startButton.current, {
-            //     duration: 0.1,
-            //     opacity: 1,
-            // });
-            gsap.to(startSection.current, {
-                zIndex: 1,
-            })
-            gsap.to(startSection.current, {
-                duration: 1,
-                opacity: 1,
-            })
-            timeLine.to(welcomeText.current, {
-                delay: 0.2,
-                duration: 1,
-                left: '25%',
-            });
-            timeLine.to(welcomeTextName.current, {
-                duration: 1,
-                left: '25%',
-            }, '-=0.3');
-            timeLine.to(welcomeTextSecond.current, {
-                duration: 8,
-                opacity: 1,
-            });
-            timeLine.to(startButton.current, {
-                duration: 1,
-                opacity: 1,
-            }, '-=7');
-            timeLine.to(startButton.current, {
-                repeat: 10,
-                duration: 3,
-                borderColor: blue,
-            }, '-=6');
-        }
-    }, [isStarted, timeLine]);
+        StartAnimations(isStarted, startButton, startSection, welcomeText, welcomeTextName, welcomeTextSecond);
+    }, [isStarted]);
 
     return(
         <section className={ `start${isStarted ? ' start--fade-out' : '' }`} ref={startSection}>

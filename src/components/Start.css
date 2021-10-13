@@ -8,20 +8,13 @@
     overflow: hidden;
 }
 
-/* .start__welcome-text {
-    height: 100%;
-    margin: 0;
-    position: relative;
-    left: 101%;
-} */
-
 .start__welcome-text-wrapper {
     display: flex;
     flex-direction: row;
     margin: 20% auto;
 }
 
-.hello, .iam {
+.iam {
     font-size: 2em;
 }
 
@@ -36,8 +29,6 @@
     height: 10vh;
     width: 100vh;
 }
-
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700);
 
 body {
   background-color: #e0e0e0;

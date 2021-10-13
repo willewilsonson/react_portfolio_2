@@ -4,6 +4,7 @@ import Portfolio from './sections/Portfolio';
 import Skills from './sections/Skills';
 import About from './sections/About';
 import Contact from './sections/Contact';
+import SectionSelectorAnimations from '../animations/SectionSelectorAnimations';
 import gsap from 'gsap/all';
 
 
@@ -26,20 +27,7 @@ const Menu = ({ showSection, setShowSection, setColor }) => {
     }
 
     useEffect(() => {
-        if (showSection === 'menu') {
-            gsap.to(portfolioSection.current, {
-                duration: 1,
-                opacity: 0,
-                zIndex: -1,
-            })
-            return;
-        }
-        gsap.to(portfolioSection.current, {
-            delay: 0.5,
-            duration: 1,
-            opacity: 1,
-            zIndex: 1,
-        })
+        SectionSelectorAnimations(showSection, portfolioSection);
     }, [showSection]);
 
     const getSection = () => {

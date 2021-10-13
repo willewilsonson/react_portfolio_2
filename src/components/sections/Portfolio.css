@@ -41,8 +41,8 @@
     color: #ffffff;
 }
 
-#futibol,
-#futibol .links-wrapper__link {
+#fotibol,
+#fotibol .links-wrapper__link {
     background: #008000;
     color: #f9f9ed;
 }
@@ -55,7 +55,7 @@
     color: #fff;
 }
 
-#futibol .links-wrapper__link:hover .links-wrapper__arrow{
+#fotibol .links-wrapper__link:hover .links-wrapper__arrow{
     color: #f9f9ed;
 }
 
@@ -124,12 +124,17 @@
     letter-spacing: 0.1em;
 }
 
-.portfolio__back-button {
-    font-family: var(--buttons-sans-serif);
-    font-weight: bolder;
+.meny-wrapper {
     position: fixed;
     top: 90%;
     left: 1%;
+    height: 100%;
+    width: 100%;
+}
+
+.portfolio__back-button {
+    font-family: var(--buttons-sans-serif);
+    font-weight: bolder;
     height: 10%;
     width: 98%;
     border: none;
@@ -138,8 +143,8 @@
     border-top: 2px solid var(--pink)
 }
 
-.portfolio__back-button:hover {
-    opacity: 0.5;
+.meny-wrapper__dropdown {
+    display: none;
 }
 
 @media screen and (min-width: 600px) {
@@ -178,13 +183,59 @@
         font-size: 2vw;
     }
 
+    .meny-wrapper {
+        position: fixed;
+        top: 0%;
+        left: 0;
+        height: 10%;
+        width: 30%;
+    }
+
     .portfolio__back-button {
         margin: 0 auto;
         padding: 0;
-        width: 30%;
-        top: 0;
-        left: 0;
-        border: none
+        height: 100%;
+        width: 100%;
+        border: none;
+        transition: 1s opacity;
+    }
+
+    .meny-wrapper__dropdown {
+        height: 80%;
+        transition: 1s font-size;
+    }
+
+    .meny-wrapper:hover {
+        height: 50%;
+        width: 32%;
+    }
+
+    .meny-wrapper:hover .meny-wrapper__dropdown {
+        background: transparent;
+        display: contents;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .meny-wrapper__dropdown button {
+        border: none;
+        border: 1px solid var(--pink);
+        height: 25%;
+        width: 100%;
+        background: var(--white);
+        transition: 0.5s transform, 1s background-image, 0.3s border-radius;
+    }
+    
+    .meny-wrapper:hover .portfolio__back-button {
+        opacity: 0.5;
+        height: 20%;
+    }
+
+    .meny-wrapper__dropdown button:hover {
+        background-image: linear-gradient(to right, var(--pink), transparent);
+        transform: translateX(1%);
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
     }
 }
 

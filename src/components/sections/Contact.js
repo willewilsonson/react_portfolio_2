@@ -19,10 +19,11 @@ const Contact = ({ handleClick }) => {
         }
         emailjs.sendForm(process.env.REACT_APP_SERVICE, process.env.REACT_APP_TEMPLATE, e.target, process.env.REACT_APP_USER)
           .then((result) => {
-              alert('Message sent!')
+              alert(`Message sent!`);
+              return result;
           }, (error) => {
               console.error(error.text);
-              alert('Oops... something went wrong, try again!')
+              alert('Oops... something went wrong, try again!');
           });
         e.target.reset();
       }
