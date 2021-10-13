@@ -21,6 +21,39 @@
     display: none;
 }
 
+.meny-wrapper {
+    position: fixed;
+    top: 90%;
+    left: 0;
+    height: 10%;
+    width: 100%;
+}
+
+.menu-wrapper__back-button {
+    margin: 0 auto;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    border: none;
+    transition: 1s opacity;
+}
+
+.meny-wrapper__dropdown {
+    height: 80%;
+    transition: 1s font-size;
+}
+
+.meny-wrapper__dropdown button {
+    border: none;
+    border: 1px solid var(--pink);
+    height: 25%;
+    width: 100%;
+    background: var(--white);
+    transition: 0.5s transform, 1s background-image, 0.3s border-radius;
+    font-family: var(--buttons-cursive);
+}
+
+@media screen and (min-width: 600px) {
     .meny-wrapper {
         position: fixed;
         top: 0%;
@@ -76,61 +109,4 @@
         border-top-right-radius: 5px;
         border-bottom-right-radius: 5px;
     }
-
-    @media screen and (min-width: 600px) {
-        .meny-wrapper {
-            position: fixed;
-            top: 0%;
-            left: 0;
-            height: 10%;
-            width: 30%;
-        }
-    
-        .menu-wrapper__back-button {
-            margin: 0 auto;
-            padding: 0;
-            height: 100%;
-            width: 100%;
-            border: none;
-            transition: 1s opacity;
-        }
-    
-        .meny-wrapper__dropdown {
-            height: 80%;
-            transition: 1s font-size;
-        }
-    
-        .meny-wrapper:hover {
-            height: 50%;
-            width: 32%;
-        }
-    
-        .meny-wrapper:hover .meny-wrapper__dropdown {
-            background: transparent;
-            display: contents;
-            display: flex;
-            flex-direction: column;
-        }
-    
-        .meny-wrapper__dropdown button {
-            border: none;
-            border: 1px solid var(--pink);
-            height: 25%;
-            width: 100%;
-            background: var(--white);
-            transition: 0.5s transform, 1s background-image, 0.3s border-radius;
-            font-family: var(--buttons-cursive);
-        }
-        
-        .meny-wrapper:hover .menu-wrapper__back-button {
-            opacity: 0.5;
-            height: 20%;
-        }
-    
-        .meny-wrapper__dropdown button:hover {
-            background-image: linear-gradient(to right, var(--pink), transparent);
-            transform: translateX(1%);
-            border-top-right-radius: 5px;
-            border-bottom-right-radius: 5px;
-        }
-    }
+}
