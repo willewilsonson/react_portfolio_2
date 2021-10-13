@@ -2,8 +2,6 @@ import './DropdownMenu.css';
 
 const DropdownMenu = ({ showSection, setShowSection, handleClick }) => {
 
-
-
     return (
         <div className='meny-wrapper'>
         <button onClick={ () => handleClick() } className='menu-wrapper__back-button'>MENU</button>
