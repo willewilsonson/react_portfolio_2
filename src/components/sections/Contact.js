@@ -1,7 +1,8 @@
 import './Contact.css';
 import emailjs from 'emailjs-com';
+import DropdownMenu from '../DropdownMenu';
 
-const Contact = ({ handleClick }) => {
+const Contact = ({ showSection, handleClick, setShowSection }) => {
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -39,7 +40,7 @@ const Contact = ({ handleClick }) => {
                     <input type="submit" value="Send" id="submit" />
                 </form>
             </article>
-            <button onClick={ () => handleClick('menu') }className='contact__back-button'>MENU</button>
+            <DropdownMenu handleClick={handleClick} showSection={showSection} setShowSection={setShowSection}/>
         </section>
     );
 };

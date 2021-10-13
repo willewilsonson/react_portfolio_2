@@ -70,20 +70,6 @@
     border: 3px solid var(--white);
 }
 
-.about__back-button {
-    font-family: var(--buttons-sans-serif);
-    font-weight: bolder;
-    position: fixed;
-    top: 90%;
-    left: 1%;
-    height: 10%;
-    width: 98%;
-    border: none;
-    background: var(--white);
-    color: var(--green);
-    border-top: 2px solid var(--pink)
-}
-
 .about__back-button:hover {
     opacity: 0.5;
 }
@@ -113,15 +99,6 @@
     .project-wrapper__image {
         margin: 5% 0% 0% 32%;
         width: 36%;
-    }
-
-    .about__back-button {
-        margin: 0 auto;
-        padding: 0;
-        width: 30%;
-        top: 0;
-        left: 0;
-        border: none;
     }
 }
 

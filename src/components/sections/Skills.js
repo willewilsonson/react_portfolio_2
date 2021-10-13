@@ -1,7 +1,8 @@
 import './Skills.css';
 import skillsContent from '../../content/skillsContent';
+import DropdownMenu from '../DropdownMenu';
 
-const Skills = ({ handleClick }) => {
+const Skills = ({ showSection, handleClick, setShowSection }) => {
 
     const createLogoDiv = (logo, key) => {
         return  <div className='skills-wrapper__project-wrapper' key={key}>
@@ -24,7 +25,7 @@ const Skills = ({ handleClick }) => {
             <article className='skills__skills-wrapper'>
                 {skillsContent.tools.map((logo, i) => createLogoDiv(logo, i))}
             </article>
-            <button onClick={ () => handleClick('menu') } className='skills__back-button'>MENU</button>
+            <DropdownMenu handleClick={handleClick} showSection={showSection} setShowSection={setShowSection}/>
         </section>
     );
 };

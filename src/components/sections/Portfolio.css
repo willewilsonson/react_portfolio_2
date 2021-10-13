@@ -3,6 +3,7 @@
     height: 100%;
     width: 100vw;
     padding-bottom: 10%;
+    overflow: hidden;
 }
 
 .portfolio__title {
@@ -124,29 +125,6 @@
     letter-spacing: 0.1em;
 }
 
-.meny-wrapper {
-    position: fixed;
-    top: 90%;
-    left: 1%;
-    height: 100%;
-    width: 100%;
-}
-
-.portfolio__back-button {
-    font-family: var(--buttons-sans-serif);
-    font-weight: bolder;
-    height: 10%;
-    width: 98%;
-    border: none;
-    background: var(--white);
-    color: var(--green);
-    border-top: 2px solid var(--pink)
-}
-
-.meny-wrapper__dropdown {
-    display: none;
-}
-
 @media screen and (min-width: 600px) {
     .portfolio {
         margin: 5% auto;
@@ -181,61 +159,6 @@
 
     .description__text-project {
         font-size: 2vw;
-    }
-
-    .meny-wrapper {
-        position: fixed;
-        top: 0%;
-        left: 0;
-        height: 10%;
-        width: 30%;
-    }
-
-    .portfolio__back-button {
-        margin: 0 auto;
-        padding: 0;
-        height: 100%;
-        width: 100%;
-        border: none;
-        transition: 1s opacity;
-    }
-
-    .meny-wrapper__dropdown {
-        height: 80%;
-        transition: 1s font-size;
-    }
-
-    .meny-wrapper:hover {
-        height: 50%;
-        width: 32%;
-    }
-
-    .meny-wrapper:hover .meny-wrapper__dropdown {
-        background: transparent;
-        display: contents;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .meny-wrapper__dropdown button {
-        border: none;
-        border: 1px solid var(--pink);
-        height: 25%;
-        width: 100%;
-        background: var(--white);
-        transition: 0.5s transform, 1s background-image, 0.3s border-radius;
-    }
-    
-    .meny-wrapper:hover .portfolio__back-button {
-        opacity: 0.5;
-        height: 20%;
-    }
-
-    .meny-wrapper__dropdown button:hover {
-        background-image: linear-gradient(to right, var(--pink), transparent);
-        transform: translateX(1%);
-        border-top-right-radius: 5px;
-        border-bottom-right-radius: 5px;
     }
 }
 

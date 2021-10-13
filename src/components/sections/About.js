@@ -1,7 +1,8 @@
 import './About.css';
 import aboutContent from '../../content/aboutContent';
+import DropdownMenu from '../DropdownMenu';
 
-const About = ({ handleClick }) => {
+const About = ({ showSection, handleClick, setShowSection }) => {
 
     const createAboutContent = (content, key) => {
         return <div key={key} className={ key % 2 === 0 ? 'about-wrapper__left' : 'about-wrapper__right' } id={content.id}>
@@ -19,7 +20,7 @@ const About = ({ handleClick }) => {
                 <img className='about-wrapper__image' src={aboutContent.img} alt='William Nordenstad'></img>
                 </div>
             </article>
-            <button onClick={ () => handleClick('menu') }className='about__back-button'>MENU</button>
+            <DropdownMenu handleClick={handleClick} showSection={showSection} setShowSection={setShowSection}/>
         </section>
     );
 };

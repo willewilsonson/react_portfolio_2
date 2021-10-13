@@ -32,16 +32,16 @@ const Menu = ({ showSection, setShowSection, setColor }) => {
 
     const getSection = () => {
         if (showSection === 'portfolio') {
-            return <Portfolio handleClick={handleClick}/>
+            return <Portfolio handleClick={handleClick} showSection={showSection} setShowSection={setShowSection}/>
         }
         if (showSection === 'skills') {
-            return <Skills handleClick={handleClick}/>
+            return <Skills handleClick={handleClick} showSection={showSection} setShowSection={setShowSection}/>
         }
         if (showSection === 'about') {
-            return <About handleClick={handleClick}/>
+            return <About handleClick={handleClick} showSection={showSection} setShowSection={setShowSection}/>
         }
         if (showSection === 'contact') {
-            return <Contact handleClick={handleClick}/>
+            return <Contact handleClick={handleClick} showSection={showSection} setShowSection={setShowSection}/>
         }
     };
 

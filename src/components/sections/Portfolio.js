@@ -1,7 +1,8 @@
 import './Portfolio.css';
 import portfolioContent from '../../content/portfolioContent';
+import DropdownMenu from '../DropdownMenu';
 
-const Portfolio = ({ handleClick }) => {
+const Portfolio = ({ showSection, handleClick, setShowSection }) => {
 
     const createPortfolioContent = (project, key) => {
         return  <div key={key} className='portfolio-wrapper__project-wrapper' id={project.id}>
@@ -22,15 +23,7 @@ const Portfolio = ({ handleClick }) => {
             <article className='portfolio__portfolio-wrapper'>
                 {portfolioContent.map((project, i) => createPortfolioContent(project, i))}
             </article>
-            <div className='meny-wrapper'>
-                <button onClick={ () => handleClick() }className='portfolio__back-button'>MENU</button>
-                <div className='meny-wrapper__dropdown'>
-                    <button>PORTFOLIO</button>
-                    <button>SKILLS</button>
-                    <button>ABOUT</button>
-                    <button>CONTACT</button>
-                </div>
-            </div>
+            <DropdownMenu handleClick={handleClick} showSection={showSection} setShowSection={setShowSection}/>
         </section>
     );
 };
