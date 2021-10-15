@@ -94,19 +94,18 @@
 
 .links-wrapper__link:hover {
     transform: translate(15%);
-    transition-delay: 0.2s;
     /* color: var(--green); */
 }
 
 .links-wrapper__link .links-wrapper__arrow {
     color: transparent;
-    transition: 0.5s color;
+    transition: 0.3s color;
 }
 
 .links-wrapper__link:hover .links-wrapper__arrow {
     /* color: var(--green); */
     opacity: 0.8;
-    transition-delay: 0.3s;
+    transition-delay: 0.1s;
 }
 
 .project-wrapper__description {
