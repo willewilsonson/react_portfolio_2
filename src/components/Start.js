@@ -28,7 +28,7 @@ const Start = ({ isStarted, setIsStarted, setShowSection, setColor }) => {
                     <p className="introline" ref={welcomeText}>I am</p>
                     <h1 className="bigline" ref={welcomeTextName}>William</h1>
                 </div>
-                <p className="outroline" ref={welcomeTextSecond}>a full stack Javacsript developer</p>
+                <p className="outroline" ref={welcomeTextSecond}>a full stack JavaScript developer</p>
             </div>
             <button className='start-button' onClick={ () => handleClick(true, 'menu') } ref={startButton}>Click me!</button>
         </section>
